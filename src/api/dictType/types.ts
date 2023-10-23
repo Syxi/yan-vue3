@@ -2,13 +2,11 @@
  * 字典类型查询对象
  */
 export interface DictTypeQuery {
-    name?: string;
-    code?: string;
+  name?: string;
+  code?: string;
 }
 
-
-
-/** 
+/**
  * 字典类型表达对象
  * @param {object} params dictTypeForm
  * @param {string} params.code 类型编码
@@ -19,9 +17,9 @@ export interface DictTypeQuery {
  * @returns
  */
 export interface DictTypeForm {
-    code?: string;
-    id?: string;
-    name?: string;
-    remark?: string;
-    status?: number;
-  }
+  code?: string;
+  id?: string;
+  name?: string;
+  remark?: string;
+  status?: number;
+}

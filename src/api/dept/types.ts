@@ -2,10 +2,8 @@
  * 部门查询对象
  */
 export interface DeptQuery {
-    deptName?: string
+  deptName?: string;
 }
-
-
 
 /**
  * 部门表单对象
@@ -18,18 +16,15 @@ export interface DeptQuery {
  * @param {object} params DeptVO 子部门
  */
 export interface DeptVO {
-    deptId?: string;
-    deptName?: string;
-    parentId?: string;
-    sort?: number;
-    status?: number;
-    children?: DeptVO[];
-    createTime?: Date;
-    updateTime?: Date;
-  }
-
-
-
+  deptId?: string;
+  deptName?: string;
+  parentId?: string;
+  sort?: number;
+  status?: number;
+  children?: DeptVO[];
+  createTime?: Date;
+  updateTime?: Date;
+}
 
 /**
  * 部门表单对象
@@ -41,9 +36,9 @@ export interface DeptVO {
  * @param {number} params.status 状态(0:启用;1:禁用)
  */
 export interface DeptForm {
-    deptId?: string;
-    deptName?: string;
-    parentId?: string;
-    sort?: number;
-    status?: number;
-  }
+  deptId?: string;
+  deptName?: string;
+  parentId?: string;
+  sort?: number;
+  status?: number;
+}

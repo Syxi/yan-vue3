@@ -7,32 +7,29 @@
  * @param {string[]} params.permission 权限集合
  */
 export interface UserInfo {
-    userId?: number;
-    username?: string;
-    realName?: string;
-    avatar?: string;
-    roles: string[];
-    perms: string[];
+  userId?: number;
+  username?: string;
+  realName?: string;
+  avatar?: string;
+  roles: string[];
+  perms: string[];
 }
-
 
 /**
  * 用户查询参数对象
  * @param {string} params.username 用户名
- * @param {string} params.mobile 
+ * @param {string} params.mobile
  * @param {string} params.realName 昵称
  * @param {number} params.status 用户状态(0:正常;1:禁用)
  * @param {string} params.deptName 部门名称
  */
 export interface UserQuery extends PageQuery {
-    username?: string;
-    mobile?: string;
-    realName?: string;
-    status?: number;
-    deptName?: string;
-   
-} 
-
+  username?: string;
+  mobile?: string;
+  realName?: string;
+  status?: number;
+  deptName?: string;
+}
 
 /**
  *  分页表格用户参数对象
@@ -42,7 +39,7 @@ export interface UserQuery extends PageQuery {
  * @param {string} params.avatar 用户头像
  * @param {string} params.email 邮箱
  * @param {number} params.gender 性别
- * @param {string} params.mobile 
+ * @param {string} params.mobile
  * @param {string} params.realName 昵称
  * @param {number} params.status 用户状态(0:正常;1:禁用)
  * @param {string} params.deptName 部门名称
@@ -50,18 +47,17 @@ export interface UserQuery extends PageQuery {
  * @returns
  */
 export interface UserPage {
-    userId?: string;
-    username?: string;
-    avatar?: string;
-    email?: string;
-    gender?: number;
-    mobile?: string;
-    realName?: string;
-    status?: number;
-    deptName?: string;
-    createTime?: Date;
+  userId?: string;
+  username?: string;
+  avatar?: string;
+  email?: string;
+  gender?: number;
+  mobile?: string;
+  realName?: string;
+  status?: number;
+  deptName?: string;
+  createTime?: Date;
 }
-
 
 /**
  * 编辑、新增表单用户参数
@@ -71,7 +67,7 @@ export interface UserPage {
  * @param {string} params.avatar 用户头像
  * @param {string} params.email 邮箱
  * @param {number} params.gender 性别
- * @param {string} params.mobile 
+ * @param {string} params.mobile
  * @param {string} params.realName 昵称
  * @param {number} params.status 用户状态(0:正常;1:禁用)
  * @param {string} params.deptName 部门名称
@@ -79,15 +75,14 @@ export interface UserPage {
  * @returns
  */
 export interface UserForm {
-    userId?: string;
-    username?: string;
-    avatar?: string;
-    email?: string;
-    gender?: number;
-    mobile?: string;
-    realName?: string;
-    status?: number;
-    deptId?: string;
-    roleIds?: string[];
-    
+  userId?: string;
+  username?: string;
+  avatar?: string;
+  email?: string;
+  gender?: number;
+  mobile?: string;
+  realName?: string;
+  status?: number;
+  deptId?: string;
+  roleIds?: string[];
 }

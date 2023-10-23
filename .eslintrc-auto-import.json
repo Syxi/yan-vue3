@@ -1,7 +1,6 @@
 {
-  "globals": {}
-}
- "Component": true,
+  "globals": {
+    "Component": true,
     "ComponentPublicInstance": true,
     "ComputedRef": true,
     "EffectScope": true,
@@ -275,3 +274,5 @@
     "whenever": true
   }
 }
+ 
+

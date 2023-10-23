@@ -2,12 +2,10 @@
  * 字典类型查询对象
  */
 export interface DictValueQuery {
-    dictName?: string;
+  dictName?: string;
 }
 
-
-
-/** 
+/**
  * 字典项表达对象
  * @param {object} params dictValueForm
  * @param {string} params.dictName 字典名称
@@ -20,12 +18,11 @@ export interface DictValueQuery {
  * @returns
  */
 export interface DictValueForm {
-    dictName?: string;
-    dictValue?: string;
-    id?: string;
-    remark?: string;
-    sort?: number;
-    status?: number;
-    typeCode?: string;
-  }
-  
+  dictName?: string;
+  dictValue?: string;
+  id?: string;
+  remark?: string;
+  sort?: number;
+  status?: number;
+  typeCode?: string;
+}

@@ -1,17 +1,13 @@
 import { MenuTypeEnum } from "src/enums/MenuTypeEnum";
 
-
 /**
  * 菜单查询对象类型
  */
 export interface MenuQuery {
-    menuName?: string;
+  menuName?: string;
 }
 
-
-
-
-/** 
+/**
  * 菜单试图对象类型
  * @param {object} params MenuVO
  * @param {string} params.componentPath 组件路径
@@ -30,26 +26,22 @@ export interface MenuQuery {
  * @returns
  */
 export interface MenuVO {
-    componentPath?: string;
-    icon?: string;
-    menuId?: string;
-    menuName?: string;
-    menuType?: MenuTypeEnum;
-    parentId?: string;
-    permission?: string;
-    redirect?: string;
-    routeName?: string;
-    routePath?: string;
-    sort?: number;
-    status?: number;
-    children?: MenuVO[];
-
+  componentPath?: string;
+  icon?: string;
+  menuId?: string;
+  menuName?: string;
+  menuType?: MenuTypeEnum;
+  parentId?: string;
+  permission?: string;
+  redirect?: string;
+  routeName?: string;
+  routePath?: string;
+  sort?: number;
+  status?: number;
+  children?: MenuVO[];
 }
 
-
-
-
-/** 
+/**
  * 菜单表单对象类型
  * @param {object} params MenuForm
  * @param {string} params.componentPath 组件路径
@@ -66,15 +58,15 @@ export interface MenuVO {
  * @returns
  */
 export interface MenuForm {
-    componentPath?: string;
-    icon?: string;
-    menuId?: string;
-    menuName?: string;
-    menuType?: MenuTypeEnum;
-    parentId?: string;
-    permission?: string;
-    redirect?: string;
-    routePath?: string;
-    sort?: number;
-    status?: number;
+  componentPath?: string;
+  icon?: string;
+  menuId?: string;
+  menuName?: string;
+  menuType?: MenuTypeEnum;
+  parentId?: string;
+  permission?: string;
+  redirect?: string;
+  routePath?: string;
+  sort?: number;
+  status?: number;
 }
