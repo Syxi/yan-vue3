@@ -72,4 +72,4 @@ const open = () => {
   background-color: $bg-color;
 }
 </style>
-@/store/counter
+@/store/counter @/store/modules/counter

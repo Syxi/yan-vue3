@@ -1,4 +1,4 @@
-import { useUserStoreHook } from "@/store/user";
+import { useUserStoreHook } from "@/store/modules/user";
 import { Directive, DirectiveBinding } from "vue";
 
 // 按钮权限
