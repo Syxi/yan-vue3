@@ -1,6 +1,6 @@
 import router from "@/router";
-import { useUserStoreHook } from "@/store/user";
-import { usePermissionStoreHook } from "@/store/permission";
+import { useUserStoreHook } from "@/store/modules/user";
+import { usePermissionStoreHook } from "@/store/modules/permission";
 
 import NProgress from "nprogress";
 import "nprogress/nprogress.css";

@@ -15,3 +15,4 @@ const counterStore = useCounterStore();
     </el-form>
   </el-card>
 </template>
+@/store/modules/counter

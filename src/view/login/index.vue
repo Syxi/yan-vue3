@@ -260,3 +260,4 @@ onMounted(() => {
 }
 </style>
 @/router/router@/store/modules/userStore@/store/user@/router/index1
+@/store/modules/user

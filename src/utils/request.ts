@@ -1,5 +1,5 @@
 import axios, { InternalAxiosRequestConfig, AxiosResponse } from "axios";
-import { useUserStoreHook } from "@/store/user";
+import { useUserStoreHook } from "@/store/modules/user";
 
 // 创建 axios 实例
 const service = axios.create({
