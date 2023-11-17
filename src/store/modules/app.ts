@@ -7,6 +7,7 @@ export const useAppStore = defineStore("app", () => {
     // state
     const device = useStorage("device", "desktop");
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const size = useStorage<any>("size", defaultSettings.size);
 
     const language = useStorage("language", defaultSettings.language);
@@ -93,4 +94,4 @@ export const useAppStore = defineStore("app", () => {
         changeTopActive
     }
 
-})
+});

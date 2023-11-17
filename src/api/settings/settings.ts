@@ -22,7 +22,7 @@ interface DefaultSettings {
     layout: string;
 
     // 主题模式(dark|light)
-    thmeme: string;
+    theme: string;
 
     // 布局大小(default| large|small)
     size: string;
@@ -44,7 +44,7 @@ const defaultSettings: DefaultSettings = {
     fixedHeader: false,
     sidebarLogo: true,
     layout: "left", // 默认左侧模式
-    thmeme: "light",
+    theme: "light",
     size: "default",
     language: "zh-cn",
     themeColor: "#409EFF",
