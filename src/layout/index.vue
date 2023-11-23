@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+<!-- eslint-disable vue/multi-word-component-names -->
 <script setup>
 
 </script>
@@ -22,7 +22,8 @@
 
        <div class="py-[8px] flex justify-between">
           <span class="text-xs">侧边栏 Logo</span>
-=======
+          </div>
+   </div>       
 <template>
     <div>
        <h3>项目配置</h3> 
@@ -40,25 +41,20 @@
 
        <div>
           <span>侧边栏 Logo</span>
->>>>>>> 703cb404e78bd3651b29bf4099e9d244b52dcd33
           <el-switch/>
        </div>
 
        <el-divider>主题颜色</el-divider>
-<<<<<<< HEAD
+
        <ul class="w-full space-x-2 flex justify-center py-2">
         <li class="inline-block w-[30px] h-[30px] cursor-pointer theme-wrap">
-=======
-       <ul>
-        <li>
->>>>>>> 703cb404e78bd3651b29bf4099e9d244b52dcd33
+
           <i-el-check/>
         </li>
        </ul>
 
        <el-divider>导航设置</el-divider>
 
-<<<<<<< HEAD
        <ul class="layout">
          <el-tooltip content="左侧模式" placement="bottom">
             <li >
@@ -160,7 +156,5 @@
 }
 
 </style>
-=======
-    </div>
 </template>
->>>>>>> 703cb404e78bd3651b29bf4099e9d244b52dcd33
+

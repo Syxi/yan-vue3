@@ -13,7 +13,7 @@
       // 路径映射
       "@/*": ["src/*"]
     },
-    "types": ["vite/client", "unplugin-icons/types/vue"],
+    "types": ["vite/client", "unplugin-icons/types/vue", "element-plus/global"],
 
     /* Bundler mode */
     "moduleResolution": "Node",
@@ -32,7 +32,7 @@
   },
   "include": [
     "src/**/*.ts",
-    "src/types/**/*.d.ts",
+    "types/**/*.d.ts",
     "vite.config.ts",
     "src/**/*.vue"
   ],

@@ -1,65 +1,69 @@
 import { defineStore } from "pinia";
-import defaultSettings from "@/api/settings/settings";
-
+import defaultSettings from "@/settings/settings";
 
 export const useSettingsStore = defineStore("setting", () => {
   // state
+  const title = defaultSettings.title;
+
+  const version = defaultSettings.version;
+
   const tagsView = useStorage<boolean>("tagsView", defaultSettings.tagsView);
 
   const showSettings = ref<boolean>(defaultSettings.showSettings);
 
   const sidebarLogo = ref<boolean>(defaultSettings.sidebarLogo);
 
-  const fixedHeader = useStorage<boolean>("fixedHeader", defaultSettings.fixedHeader);
+  const fixedHeader = useStorage<boolean>(
+    "fixedHeader",
+    defaultSettings.fixedHeader
+  );
 
   const layout = useStorage<string>("layout", defaultSettings.layout);
 
-  const themeColor = useStorage<string>("themeColor", defaultSettings.themeColor);
+  const themeColor = useStorage<string>(
+    "themeColor",
+    defaultSettings.themeColor
+  );
 
   const theme = useStorage<string>("theme", defaultSettings.theme);
 
+  const watemark = useStorage<any>("watemark", defaultSettings.watermark);
+
+  const settingMap: Record<string, Ref<any>> = {
+    tagsView,
+    showSettings,
+    sidebarLogo,
+    fixedHeader,
+    layout,
+    themeColor,
+    theme,
+    watemark: watemark.value,
+  };
+
   // actions
-  function changeSetting(param: { key: string; value: any }) {
-    const { key, value } = param;
-    switch (key) {
-      case "showSettings":
-        showSettings.value = value;
-        break;
-      case "fixedHeader":
-        fixedHeader.value = value;
-        break;
-      case "tagsView":
-        tagsView.value = value;
-        break;
-      case "sidevarLogo":
-        sidebarLogo.value = value;
-        break;
-      case "layout":
-        layout.value = value;
-        break;
-      case "themeColor":
-        themeColor.value = value;
-        break;
-      case "theme":
-        theme.value = value;
-        if (theme.value === "dark") {
-          document.documentElement.classList.add("dark");
-        } else {
-          document.documentElement.classList.remove("dark");
-        }
-        break;
+  function changeSetting({ key, value }: { key: string; value: any }) {
+    const setting = settingMap[key];
+    if (setting !== undefined) {
+      setting.value = value;
+      if (key === "theme" && value === "dark") {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
     }
   }
 
   return {
-    showSettings,
+    title,
+    version,
     tagsView,
-    fixedHeader,
+    showSettings,
     sidebarLogo,
+    fixedHeader,
     layout,
     themeColor,
-    changeSetting,
     theme,
-  }
-  
+    watemark,
+    changeSetting,
+  };
 });
